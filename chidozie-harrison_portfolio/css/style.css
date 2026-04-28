@@ -1,0 +1,685 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Body section design start*/
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.body > p{
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+    height: 1rem;
+    padding: 2rem;
+    color: white;
+    }
+    /* Body section design ends*/
+
+
+
+    /* Header section design start*/
+    header{
+        display: flex;
+        width: 100%;
+        height: 4.5rem;
+        border-bottom: 1px solid black;
+        margin-top: 1rem;
+        position: sticky;
+        top: 0;
+        z-index: 20;
+    }
+    /* Header section design ends*/
+
+
+
+     /* Nav section design start*/
+
+    .navbar{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: blue;
+    }
+
+    .navbar > a{
+        color: white;
+        margin-top: 1.5rem;
+        text-decoration: none;
+    }
+
+    .navbar > div{
+        margin-top: 1rem;
+        padding-right: 2.5rem;
+        color: black;
+        font-size: x-large;
+    }
+    /* Nav section design ends*/
+
+
+    /* Hero section design start*/
+
+.hero{
+    display: grid;
+    margin-top: 2rem;
+
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.hero-image{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+
+.hero-image a{
+    position: absolute;
+    bottom: 20px;
+
+
+    text-decoration: none;
+    margin-top: 1rem;
+    border: 2px solid black;
+    padding: 1rem;
+    border-radius: 15px;
+    background-color:blue;
+    color: white;
+    box-shadow: 10px;
+
+}
+
+ /* Hero section design ends*/
+
+
+
+/* About section design start*/
+
+.about{
+    display: grid;
+    margin: 1rem 5rem;
+}
+
+.container{
+    display: grid;
+    margin-top: 1rem;
+    gap: 15px;
+    grid-template-columns: repeat(2,250px);
+    grid-template-rows: repeat(3,px);
+    justify-content: center;
+    background-color: purple;
+    
+}
+
+.about h2{
+    text-align: center;
+}
+
+
+
+.container div{
+    background-color: rgb(87, 87, 175);
+    color: white;
+    margin-top: 1rem;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 15px;
+}
+
+
+.container div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.container div:nth-child(Introduction){
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.container div:nth-child(Background,interest and motivation){
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+
+}
+.container div:nth-child(Why learning web development){
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+
+}
+/* About section design ends*/
+
+
+
+/* cards for my skills start here. */
+
+.cards{
+    display: grid;
+    background-color:olivedrab;
+    justify-content: center;
+}
+
+.cards h2{
+    display:flex;
+    justify-content: center;
+    margin-top: 1rem;
+
+}
+
+.cards p{
+    display: flex;
+    justify-content: center;
+    color: white;
+
+}
+
+.cards-content{
+    display: grid;
+    gap: 15px;
+    list-style: none;
+    grid-template-columns: repeat(4,150px);
+    grid-template-rows: repeat(2,150px);
+
+}
+
+.cards-content div{
+    display: grid;
+    gap: 15px;
+    background-color: blue;
+    color: white;
+    margin-top: 1rem;
+    padding: 2rem;
+    border: 2px solid white;
+    border-radius: 15px;
+}
+
+.cards-content div:hover{
+    scale: 1.2;
+    background-color: black;
+    color: yellow;
+}
+
+.cards-content div:nth-child(html){
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+.cards-content div:nth-child(CSS){
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+.cards-content div:nth-child(Git and GitHub){
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+/* cards for my skills ends here. */
+
+
+/* project showcase design start*/
+
+.projects{
+    display: grid;
+    margin-top: 1rem;
+    background-color: gray;
+    padding-top: 1rem;
+}
+
+.project-container{
+    display: grid;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+/* project 1 design starts here */
+
+.project-container1{
+    display: grid;
+    position: relative;
+    width: 300px;
+    margin-top: 1rem;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    justify-content: center;
+    
+    
+}
+
+.project-container img{
+    width: 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.project-container1 img{
+    background: rgba(0, 0, 0,0.5);
+}
+
+
+.overlay{
+    opacity: 0;
+    transition: 0.3sec ease-in-out 2s;
+}
+
+.project-container1:hover .overlay{
+    opacity: 1;
+}
+/* project 1 design stops here */
+
+
+/* project 2 design starts here */
+.project-container2{
+    
+    width: 300px;
+    position: relative;
+    margin-top: 1rem;
+    gap: 15px;
+    justify-content: center;
+    
+}
+
+.project-container img{
+    width: 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.project-container2 img{
+    background: rgba(0, 0, 0,0.5);
+}
+
+
+.overlay{
+    opacity: 0;
+    transition: 0.2sec;
+}
+
+.project-container2:hover .overlay{
+    opacity: 1;
+}
+/* project 2 design stops here */
+
+
+/* project 3 design starts here */
+.project-container3{
+    
+    width: 300px;
+    position: relative;
+    margin-top: 1rem;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    justify-content: center;
+    
+}
+
+.project-container img{
+    width: 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.project-container3 img{
+    background: rgba(0, 0, 0,0.5);
+}
+
+
+.overlay{
+    opacity: 0;
+    transition: 0.2sec;
+}
+
+.project-container3:hover .overlay{
+    opacity: 1;
+}
+/* project 3 design stops here */
+
+
+
+.projects h2{
+    text-align: center;
+}
+
+
+
+.project-container div{
+    background-color: green;
+    color: black;
+    margin-top: 1rem;
+    padding: 2rem;
+    border: 1px solid white;
+    border-radius: 15px;
+    gap: 10px;
+}
+
+.project-container div a{
+    
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 2px;
+    border-radius: 10px;
+    color: blue;
+    
+}
+
+.project-container div:nth-child(Contact form)
+{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.project-container div:nth-child(Blog post)
+{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+
+}
+.project-container div:nth-child(E-commerce website)
+{
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+
+}
+
+/* project showcase design ends */
+
+
+/* Contact section design start*/
+
+#contact{
+    display: grid;
+    width: auto;
+    background-color: blue;
+    color: white;
+    margin-top: 1rem;
+    
+}
+
+.contact-intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    
+}
+.contact-intro,p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0rem 2rem;
+    font-size: large;
+}
+
+/* Contact section design ends*/
+
+
+
+/* form section design start*/
+
+#field{
+    display: grid;
+    grid-template-columns: repeat(2,300px);
+    grid-template-rows: repeat(2,1fr);
+    width: 100%;
+    margin: 1rem 2rem;
+    padding: 2rem;
+}
+
+.form-info{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+}
+
+.btn{
+    margin-top: 1rem;
+    padding: 1rem;
+    
+}
+.btn:hover{
+    
+    color: white;
+    scale: 1.1;
+    
+}
+
+.social-link{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* form section design ends*/
+
+#footer{
+    height: 100%;
+    margin: 2rem 0px;
+    background-color: black;
+    width: 100vw;
+    
+}
+
+.my-footer{
+    width: 100vw;
+    padding: 5rem;
+    height: 30vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* Media Query design start*/
+
+
+/* mobile first */
+.hero-image{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#field{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+
+.hero-image a{
+    position: absolute;
+    bottom: 20px;
+
+}
+
+.hero-image a:hover{
+    background-color: gold;
+    color: black;
+    scale: 1.1;
+}
+
+
+#footer{
+    width: 100%;
+    height: 100vh;
+}
+
+@media (min-width:320px){
+
+}
+
+
+@media (min-width:768px){
+
+    .container{
+    display: grid;
+    align-items: center;
+}
+
+.cards-content{
+    display: grid;
+    align-items: center;
+}
+
+.project-container{
+    display: grid;
+    align-items: center;
+}
+
+#field{
+    display: grid;
+    align-items: center;
+}
+    
+}
+
+
+@media (min-width:1024px){
+
+        .container{
+    display: grid;
+    align-items: center;
+}
+
+.cards-content{
+    display: grid;
+    align-items: center;
+}
+
+.project-container{
+    display: grid;
+    align-items: center;
+}
+
+}
+
+/* Media Query design ends*/
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
