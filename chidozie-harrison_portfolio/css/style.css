@@ -8,7 +8,7 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: white;
+    background-color: #e5eaec;
     font-size: 16px;
     line-height: 1.2;
 }
@@ -16,10 +16,10 @@ body{
 .body > p{
     display: flex;
     justify-content: center;
-    background-color: gray;
+    background-color: ;
     height: 1rem;
     padding: 2rem;
-    color: white;
+    color: black;
     }
     /* Body section design ends*/
 
@@ -35,7 +35,75 @@ body{
         position: sticky;
         top: 0;
         z-index: 20;
+        
     }
+
+    .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Hide checkbox */
+#menu-toggle {
+    display: none;
+}
+
+/* Hamburger icon */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 200px;
+        background-color: white;
+        padding: 1rem;
+        border: 1px solid #ccc;
+    }
+
+    #menu-toggle:checked ~ .nav-links {
+        display: flex;
+    }
+}
+
+    .navbar div{
+        font-weight: 800;
+
+    }
+
+
     /* Header section design ends*/
 
 
@@ -47,11 +115,16 @@ body{
         height: 100%;
         display: flex;
         justify-content: space-evenly;
-        background-color: blue;
+        background-color: white;
+
+    }
+
+    .navbar :hover{
+        scale: 1.2;
     }
 
     .navbar > a{
-        color: white;
+        color: black;
         margin-top: 1.5rem;
         text-decoration: none;
     }
@@ -99,8 +172,8 @@ body{
     border: 2px solid black;
     padding: 1rem;
     border-radius: 15px;
-    background-color:blue;
-    color: white;
+    background-color:white;
+    color: black;
     box-shadow: 10px;
 
 }
@@ -123,7 +196,7 @@ body{
     grid-template-columns: repeat(2,250px);
     grid-template-rows: repeat(3,px);
     justify-content: center;
-    background-color: purple;
+    
     
 }
 
@@ -134,8 +207,8 @@ body{
 
 
 .container div{
-    background-color: rgb(87, 87, 175);
-    color: white;
+    background-color: white;
+    color: black;
     margin-top: 1rem;
     padding: 5px;
     border: 2px solid white;
@@ -173,7 +246,7 @@ body{
 
 .cards{
     display: grid;
-    background-color:olivedrab;
+    
     justify-content: center;
 }
 
@@ -187,7 +260,7 @@ body{
 .cards p{
     display: flex;
     justify-content: center;
-    color: white;
+    color: black;
 
 }
 
@@ -203,8 +276,8 @@ body{
 .cards-content div{
     display: grid;
     gap: 15px;
-    background-color: blue;
-    color: white;
+    background-color: white;
+    color: black;
     margin-top: 1rem;
     padding: 2rem;
     border: 2px solid white;
@@ -237,7 +310,7 @@ body{
 .projects{
     display: grid;
     margin-top: 1rem;
-    background-color: gray;
+    
     padding-top: 1rem;
 }
 
@@ -439,8 +512,8 @@ body{
 #contact{
     display: grid;
     width: auto;
-    background-color: blue;
-    color: white;
+    
+    color: black;
     margin-top: 1rem;
     
 }
@@ -471,11 +544,12 @@ body{
 
 #field{
     display: grid;
-    grid-template-columns: repeat(2,300px);
+    grid-template-columns: repeat(2,450px);
     grid-template-rows: repeat(2,1fr);
     width: 100%;
     margin: 1rem 2rem;
     padding: 2rem;
+    gap: 2rem;
 }
 
 .form-info{
@@ -485,22 +559,91 @@ body{
     
 }
 
-.btn{
+.form-info input{
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 0px 5px;
     margin-top: 1rem;
-    padding: 1rem;
+}
+
+
+textarea{
+    width: 400px; px;
+    height: 100px;
+    border-radius: 10px;
+    padding: 0px 5px;
+}
+
+
+
+.btn1{
+    
+    background-color: gold;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+    
+    
+
+.btn1:hover{
+    
+    
+    background-color: black;
+    color: gold;
+    transform: scale(1.05);
+
     
 }
-.btn:hover{
+
+
+
+.btn2{
     
-    color: white;
-    scale: 1.1;
+    background-color: gold;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+    
+    
+
+.btn2:hover{
+    
+    
+    background-color: black;
+    color: gold;
+    transform: scale(1.05);
+
     
 }
+
+
+
 
 .social-link{
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    margin-top: 1rem;
+}
+
+.social-link input{
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 0px 5px;
 }
 
 /* form section design ends*/
@@ -568,6 +711,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 1rem 2rem;
 }
 
 #field{
@@ -614,6 +758,8 @@ body{
     .container{
     display: grid;
     align-items: center;
+    gap: 15px;
+    padding: 0rem 5rem;
 }
 
 .cards-content{
@@ -629,8 +775,9 @@ body{
 #field{
     display: grid;
     align-items: center;
+    margin: 0px 5px;
 }
-    
+
 }
 
 
