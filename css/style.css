@@ -91,6 +91,10 @@ p, a, button, input{
     cursor: pointer;
 }
 
+.hamburger:hover{ 
+    color: blue;
+}
+
 /* Mobile */
 @media (max-width: 768px) {
 
@@ -131,7 +135,7 @@ p, a, button, input{
         width: 100%;
         height: 100%;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         background-color: white;
 
     }
